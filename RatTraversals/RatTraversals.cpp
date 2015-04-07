@@ -125,29 +125,7 @@ stackEntry popStack()
 {
 	return stack[sp--];
 }
-int DFS_Rec(int row,int col)
-{
-	if (maze[row][col]!=0)
-	{
-		printMaze();
-		return 0; // report failure
-	}
-	if (row==stopRow && col==stopCol)
-	{
-		maze[row][col]=3;
-		return 1; // report success
-	}
-	maze[row][col]=2;  // Mark slot as discovered
-	printMaze();
-	if (!DFS_Rec(row-1,col))       // Try North
-		if (!DFS_Rec(row,col+1))     // Try East
-			if (!DFS_Rec(row+1,col))   // Try South
-				if (!DFS_Rec(row,col-1)) // Try West
-					return 0;
-	maze[row][col]=3;  // On final path
-	printMaze();
-	return 1;  // Propagate success through recursion
-}
+
 int canMove(int row, int col)
 {
 	if (maze[row][col] == 1)
@@ -166,37 +144,60 @@ void getRowCol(int row, int col, int dir, int& rowOut, int& colOut)
 		rowOut = rowOut+1;
 }
 
-int DFS_Rec1(int row, int col)
+int isASolution(int row, int col)
 {
-	if (row == stopRow && col == stopCol)
+    if (row == stopRow && col == stopCol)
 	{
 		maze[row][col] = 3;
 		return 1;
 	}
-	if (maze[row][col] != 0)
-	{
-		return 0;
-	}
+    return 0;
+}
+
+int DFS_recursive(int row, int col)
+{
+    
+
+    /** If this is a solution, then return */
+	if (isASolution(row,col) == 1)
+        return 1;
+
+    /**
+     * The cell will never be visited if it is marked. Typical DFS search.
+    */
 	maze[row][col] = 2;
+    /**
+    * For all children of this cell, visite them
+    */
 	for (int idx = 1; idx <=4; ++idx)
 	{
 		int rowOut = row;
 		int colOut = col;
 		getRowCol(row, col, idx,rowOut,colOut);
-		if (canMove(rowOut,colOut))
+        /**
+         * If this is a child (in this case not a wall) and is not visited
+         * then visit it.
+         */
+		if (canMove(rowOut,colOut) && maze[rowOut][colOut] == 0)
 		{
-			//maze[rowOut][colOut] = 2;
 			printMaze();
-			if (DFS_Rec1(rowOut,colOut) == 1)
+            /** 
+            * If there is a solution, then mark the cell and return
+            */
+			if (DFS_recursive(rowOut,colOut) == 1)
 			{
 				maze[rowOut][colOut] = 3;
 				return 1;
 			}
-
 		}
 	}
+    /** 
+     * Unmark the cell and return failure.
+     * The unmarking occurs in backtracking so as to reuse the same cell in a different solution.
+     */
 	maze[row][col] = 0;
 	printMaze();
+    // Return failure.
 	return 0;
 }
 
@@ -267,7 +268,7 @@ void main()
 	readInput();
 	printf("Initial maze:\n");
 	printMaze();
-	if (DFS_stack(startRow,startCol))
+	if (DFS_recursive(startRow,startCol))
 		printf("Success:\n");
 	else
 		printf("Failure:\n");
