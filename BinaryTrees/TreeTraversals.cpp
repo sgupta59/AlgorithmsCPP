@@ -15,7 +15,7 @@ int treeTests()
 	preOrderIterative2(root);
 	printf("\n");
 #endif 
-#if 1
+#if 0
 	printf("in order traversal, expected:\n 3 5 6 7 10 12 13 15 16 18 20 23\n");
 	inOrderRecursive(root);
 	printf("\n");
@@ -24,13 +24,13 @@ int treeTests()
 	inOrderIterative1(root);
 	printf("\n");
 #endif
-#if 1
+#if 0
 	printf("PostOrder traversal, expected:\n 3 7 6 10 13 12 5 18 23 20 16 15\n");
 	postOrderRecursive(root);
 	printf("\n");
 	postOrderIterative(root);
 #endif
-#if 0 
+#if 1 
 	printf("Level Order traversal, expected:\n 15 5 16 3 12 20 10 13 18 23 6 7\n");
 	printLevelOrder2(root);
 	printLevelOrder1(root);
