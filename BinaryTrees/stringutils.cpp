@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <cstring>
-void stringtypes()
+void stringtypes() 
 {
 	// array size is 6, 5 characters are added to it, 6th character is 0. after that the memory is junk.
 	// 6th character is '0' is I think just because this is debug mode, can be anything
