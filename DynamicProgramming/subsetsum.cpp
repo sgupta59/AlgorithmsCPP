@@ -8,7 +8,7 @@ bool isSubsetSum(int set[], int n, int sum)
     // The value of subset[i][j] will be true if there is a subset of set[0..j-1]
     //  with sum equal to i
     bool subset[7][10];
- 
+  
     // If sum is 0, then answer is true
     for (int i = 0; i <= n; i++)
       subset[0][i] = true;
