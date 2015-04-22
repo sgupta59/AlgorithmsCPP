@@ -3,7 +3,7 @@
 
 int main()
 {
-	//stringtests();
+	//stringtests(); 
 	treeTests();
 }
 
