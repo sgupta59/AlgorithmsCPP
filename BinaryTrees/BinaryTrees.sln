@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "subsetsum", "..\subsetsum\s
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GraphColoring", "GraphColoring\GraphColoring.vcxproj", "{42E852F5-84FF-4708-B7C3-92D506718980}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "..\test\test.vcxproj", "{CF4DB4BB-D1D2-49DE-9E2C-B2AEBA8BC126}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -37,6 +39,10 @@ Global
 		{42E852F5-84FF-4708-B7C3-92D506718980}.Debug|Win32.Build.0 = Debug|Win32
 		{42E852F5-84FF-4708-B7C3-92D506718980}.Release|Win32.ActiveCfg = Release|Win32
 		{42E852F5-84FF-4708-B7C3-92D506718980}.Release|Win32.Build.0 = Release|Win32
+		{CF4DB4BB-D1D2-49DE-9E2C-B2AEBA8BC126}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CF4DB4BB-D1D2-49DE-9E2C-B2AEBA8BC126}.Debug|Win32.Build.0 = Debug|Win32
+		{CF4DB4BB-D1D2-49DE-9E2C-B2AEBA8BC126}.Release|Win32.ActiveCfg = Release|Win32
+		{CF4DB4BB-D1D2-49DE-9E2C-B2AEBA8BC126}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
