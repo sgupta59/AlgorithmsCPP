@@ -15,25 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RemoveSpaces.cpp">
+    <ClCompile Include="virtualinheritance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="stringtests.cpp">
+    <ClCompile Include="inheritances.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CountWords.cpp">
+    <ClCompile Include="diamondofdeath.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="printlong.cpp">
+    <ClCompile Include="MultipleInheritanceTest1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="reversestring.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PrintSpiral.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="matrixtest.cpp">
+    <ClCompile Include="constructors1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

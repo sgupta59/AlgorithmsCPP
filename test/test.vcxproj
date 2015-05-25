@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7C67F85E-72C1-403D-87F0-9744C171D156}</ProjectGuid>
+    <ProjectGuid>{CF4DB4BB-D1D2-49DE-9E2C-B2AEBA8BC126}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>leetcode</RootNamespace>
+    <RootNamespace>test</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -74,17 +74,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CountWords.cpp">
+    <ClCompile Include="constructors1.cpp" />
+    <ClCompile Include="diamondofdeath.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="matrixtest.cpp" />
-    <ClCompile Include="printlong.cpp" />
-    <ClCompile Include="PrintSpiral.cpp" />
-    <ClCompile Include="RemoveSpaces.cpp">
+    <ClCompile Include="inheritances.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="reversestring.cpp" />
-    <ClCompile Include="stringtests.cpp">
+    <ClCompile Include="MultipleInheritanceTest1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="virtualinheritance.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>
