@@ -1,6 +1,9 @@
 #include <iostream>
 #include <stdlib.h>
-
+/**
+ http://codereview.stackexchange.com/questions/10776/simplified-regular-expression-engine
+ --> "real" regular expression, do this here
+*/
 bool isMatch(const char* str, const char* pattern)
 {
 	if (str[0] == '\0' && pattern[0] == '\0')
