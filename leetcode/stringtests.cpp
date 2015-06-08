@@ -5,8 +5,10 @@ int main()
 {
 	char p[5];
    char q[]="Hello";
-   int i=0;
-
+   int i=129;
+   char* p1 = (char*)&i;
+   if (p1[0] == 1)
+	   printf("test");
    strcpy(p,"Hello");
    printf("strlen(p)=%d\n",strlen(p));
    printf("sizeof(p)=%d\n",sizeof(p));

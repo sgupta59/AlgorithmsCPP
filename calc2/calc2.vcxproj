@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{04F88E89-C433-450B-8DDA-1A2BB29F6669}</ProjectGuid>
+    <ProjectGuid>{0E4EAA44-679F-4C4A-AC44-D7BDADD16F21}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>SortingSearching</RootNamespace>
+    <RootNamespace>calc2</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -74,16 +74,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="medianofmedians.cpp">
+    <ClInclude Include="Parse.h" />
+    <ClInclude Include="Scan.h" />
+    <ClInclude Include="Store.h" />
+    <ClInclude Include="Symtab.h" />
+    <ClInclude Include="Tree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="nearlysortedheap.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="sumints.cpp" />
-    <ClCompile Include="writeIntesToBinary.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
+    <ClCompile Include="Parse.cpp" />
+    <ClCompile Include="Scan.cpp" />
+    <ClCompile Include="Store.cpp" />
+    <ClCompile Include="Symtab.cpp" />
+    <ClCompile Include="Tree.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

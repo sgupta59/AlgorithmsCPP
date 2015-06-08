@@ -11,9 +11,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{04F88E89-C433-450B-8DDA-1A2BB29F6669}</ProjectGuid>
+    <ProjectGuid>{092C1F9A-F759-48EA-9D9C-917F4CD2320C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>SortingSearching</RootNamespace>
+    <RootNamespace>patterns</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -74,14 +74,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="medianofmedians.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="nearlysortedheap.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="sumints.cpp" />
-    <ClCompile Include="writeIntesToBinary.cpp">
+    <ClCompile Include="Command.cpp" />
+    <ClCompile Include="Decorator.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>
