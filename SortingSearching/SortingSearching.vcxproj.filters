@@ -21,5 +21,14 @@
     <ClCompile Include="nearlysortedheap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="writeIntesToBinary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sumints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="heapsort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

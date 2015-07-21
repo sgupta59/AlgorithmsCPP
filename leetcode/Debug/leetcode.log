@@ -1,4 +1,4 @@
-﻿Build started 6/8/2015 5:46:38 AM.
+﻿Build started 7/20/2015 11:05:14 PM.
      1>Project "C:\Users\kg\git\CPPSRC\leetcode\leetcode.vcxproj" on node 2 (clean target(s)).
      1>_PrepareForClean:
          Deleting file "Debug\leetcode.lastbuildstate".
@@ -6,4 +6,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.44
+Time Elapsed 00:00:00.14

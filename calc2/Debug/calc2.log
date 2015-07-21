@@ -1,4 +1,4 @@
-﻿Build started 6/8/2015 5:46:44 AM.
+﻿Build started 7/20/2015 11:05:15 PM.
      1>Project "C:\Users\kg\git\CPPSRC\calc2\calc2.vcxproj" on node 2 (clean target(s)).
      1>_PrepareForClean:
          Deleting file "Debug\calc2.lastbuildstate".
@@ -6,4 +6,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.85
+Time Elapsed 00:00:00.42

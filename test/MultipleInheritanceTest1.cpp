@@ -9,7 +9,7 @@ class A
   int x;
 public:
   A(int i) { x = i; }
-  //A(){x = 0;}
+  A(){x = 0;}
   void print() { cout << x; }
 };
  

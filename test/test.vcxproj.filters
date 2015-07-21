@@ -30,5 +30,14 @@
     <ClCompile Include="constructors1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="placement1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="placement2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stringutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
