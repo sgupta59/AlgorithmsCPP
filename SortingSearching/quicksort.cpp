@@ -1,5 +1,15 @@
 #include <iostream>
+#include <queue>
+
 using namespace std;
+
+class lessThan {
+public:
+       bool operator() (int& lhs, int& rhs) 
+       {
+           return lhs < rhs;
+       }
+};
 
 void printArray(int* a, int len)
 {
@@ -13,18 +23,6 @@ int partition(int* a, int lo, int hi,int count)
     int i = lo;
     int j = hi+1;
     while (true) {
-        /*while (a[++i] < pivot)
-        {
-            if (i==hi) 
-                break;
-        }
-        while (a[--j] > pivot)
-        {
-            if (j==lo) 
-            {
-                break;
-            }
-        }*/
         while (a[++i] < pivot)
             if (i==hi) break;
         while (a[--j] > pivot)
@@ -107,9 +105,12 @@ void quicksort_3way(int* a, int lo, int hi, int count)
     quicksort_3way(a,lo,lt-1,count);
     quicksort_3way(a,gt+1,hi,count);
 }
+
+
 void main()
 {
     //int input[] = {1, 12, 5, 26, 7, 14, 3, 7, 2};
+
     int input[] = {18,2,23,23,18,23,2,18,18,23,2,18};
     quicksort_3way(input,0,sizeof(input)/sizeof(input[0])-1,sizeof(input)/sizeof(input[0])-1);
     printArray(input,sizeof(input)/sizeof(input[0])-1);

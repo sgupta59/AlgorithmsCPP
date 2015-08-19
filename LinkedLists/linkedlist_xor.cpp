@@ -68,7 +68,7 @@ void printList (struct node *head)
 }
  
 // Driver program to test above functions
-int main ()
+int main1 ()
 {
     /* Create following Doubly Linked List
        head-->40<-->30<-->20<-->10   */
