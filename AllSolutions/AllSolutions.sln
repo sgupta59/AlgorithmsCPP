@@ -1,9 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+# Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AllSolutions", "AllSolutions.vcxproj", "{B20AEAA6-6BB9-4D68-9D16-CD99B1853689}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BackTracking", "..\BackTracking\BackTracking.vcxproj", "{0BF93C20-6165-4DE6-A50E-8B36A4C016F6}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BinaryTrees", "..\BinaryTrees\BinaryTrees.vcxproj", "{706BE81D-35B2-47C3-84E0-A752FFBB4A84}"
 EndProject
@@ -39,6 +37,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays", "..\Arrays\Arrays.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PriorityQueue", "..\PriorityQueue\PriorityQueue.vcxproj", "{D06C83CD-1FA3-420F-93DE-CC3DBC983F6F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BitsAndBytes", "..\BitsAndBytes\BitsAndBytes.vcxproj", "{44649F77-0E09-48D7-B886-9C884102E375}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -49,10 +49,6 @@ Global
 		{B20AEAA6-6BB9-4D68-9D16-CD99B1853689}.Debug|Win32.Build.0 = Debug|Win32
 		{B20AEAA6-6BB9-4D68-9D16-CD99B1853689}.Release|Win32.ActiveCfg = Release|Win32
 		{B20AEAA6-6BB9-4D68-9D16-CD99B1853689}.Release|Win32.Build.0 = Release|Win32
-		{0BF93C20-6165-4DE6-A50E-8B36A4C016F6}.Debug|Win32.ActiveCfg = Debug|Win32
-		{0BF93C20-6165-4DE6-A50E-8B36A4C016F6}.Debug|Win32.Build.0 = Debug|Win32
-		{0BF93C20-6165-4DE6-A50E-8B36A4C016F6}.Release|Win32.ActiveCfg = Release|Win32
-		{0BF93C20-6165-4DE6-A50E-8B36A4C016F6}.Release|Win32.Build.0 = Release|Win32
 		{706BE81D-35B2-47C3-84E0-A752FFBB4A84}.Debug|Win32.ActiveCfg = Debug|Win32
 		{706BE81D-35B2-47C3-84E0-A752FFBB4A84}.Debug|Win32.Build.0 = Debug|Win32
 		{706BE81D-35B2-47C3-84E0-A752FFBB4A84}.Release|Win32.ActiveCfg = Release|Win32
@@ -121,6 +117,10 @@ Global
 		{D06C83CD-1FA3-420F-93DE-CC3DBC983F6F}.Debug|Win32.Build.0 = Debug|Win32
 		{D06C83CD-1FA3-420F-93DE-CC3DBC983F6F}.Release|Win32.ActiveCfg = Release|Win32
 		{D06C83CD-1FA3-420F-93DE-CC3DBC983F6F}.Release|Win32.Build.0 = Release|Win32
+		{44649F77-0E09-48D7-B886-9C884102E375}.Debug|Win32.ActiveCfg = Debug|Win32
+		{44649F77-0E09-48D7-B886-9C884102E375}.Debug|Win32.Build.0 = Debug|Win32
+		{44649F77-0E09-48D7-B886-9C884102E375}.Release|Win32.ActiveCfg = Release|Win32
+		{44649F77-0E09-48D7-B886-9C884102E375}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

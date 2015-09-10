@@ -13,9 +13,9 @@ void remove_all_spaces(char* str)
 		}
 		*current++ = *str++;
 	}
-	*current = *str;
+	*current = *str;   
 }
-
+ 
 void remove_multiple_spaces(char* str)
 {
 	char* out = str;
@@ -186,9 +186,21 @@ static void stringLengthTests()
 	int length5a = sizeof(str5);
 	fprintf(stdout,"String length string literal:\n");
 }
+void remove_all_spaces_test()
+{
+    char* str = " ab  c  d ";
+    // make a copy of str. the length of this string is given by strlen excluding
+    // the terminating character.
+    int len = strlen(str);
+    char* newstr = new char[len+1]; 
+    memset(newstr,'\0',len+1);
+    memcpy(newstr,str,len*sizeof(char));
+    remove_all_spaces(newstr);
+    fprintf(stdout,"%s\n", newstr);
+}
 int main()
 {
-    
+    remove_all_spaces_test();
     char str2[] = "memmove can be very useful......";
     //             --------------------^ insert here
     //             ---------------^ from here
