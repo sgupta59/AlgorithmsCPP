@@ -78,9 +78,61 @@ void Graph::topologicalSort()
     }
 }
  
+void DFS(int** g, int n, int u, int* visited, stack<int>& stk)
+{
+	visited[u] = 1;
+	for (int j = 0; j < 6; ++j)
+	{
+		if (g[u][j] == 1 && visited[j] == 0) {
+			DFS(g, n, j, visited, stk);
+		}
+	}
+	stk.push(u);
+}
+void topologicalSortTest()
+{
+	// create a matrix representation of a graph
+    int** graph = new int*[6];
+	for  (int i = 0; i < 6; ++i)
+		graph[i] = new int[6];
+
+	// initialize
+	for (int i = 0; i < 6; ++i)
+		for  (int j = 0; j < 6; ++j)
+			graph[i][j] = 0;
+
+	graph[5][2] = 1;
+	graph[5][0] = 1;
+	graph[4][0] = 1;
+	graph[4][1] = 1;
+	graph[2][3] = 1;
+	graph[3][1] = 1;
+	int *visited  = new int[6];
+	stack<int> stk;
+	for  (int i = 0; i < 6; ++i)
+		visited[i] = 0;
+	for (int i = 0; i < 6; ++i)
+	{
+		if (visited[i] != 1)
+		{
+			DFS(graph, 6,i, visited, stk);
+		}
+	}
+	while (stk.empty() == false)
+	{
+		cout << stk.top() << endl;
+		stk.pop();
+	}
+
+	for (int i = 0; i < 6; ++i)
+		delete [] graph[i];
+	delete [] graph;
+
+}
 // Driver program to test above functions
 int main()
 {
+	topologicalSortTest();
     // Create a graph given in the above diagram
     Graph g(6);
     g.addEdge(5, 2);

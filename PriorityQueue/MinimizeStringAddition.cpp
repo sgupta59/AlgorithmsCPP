@@ -1,5 +1,6 @@
 #include <iostream>
 #include <queue>
+#include <algorithm>
 using namespace std;
 
 class compLess {
@@ -34,7 +35,7 @@ void main()
 {
 	int myints[] = {1, 3,2}; 
 	int sum = 0;
-	priority_queue<int,vector<int>, compLess > pq1;
+	priority_queue<int,vector<int>, greater<int> > pq1;
 	pq1.push(1);
 	cout << endl;
 	pq1.push(2);
