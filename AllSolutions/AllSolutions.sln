@@ -39,6 +39,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Arrays", "..\Arrays\Arrays.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PriorityQueue", "..\PriorityQueue\PriorityQueue.vcxproj", "{D06C83CD-1FA3-420F-93DE-CC3DBC983F6F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StringProcessing", "..\StringProcessing\StringProcessing.vcxproj", "{30B6A303-FBE9-4FF4-B7BC-0E2314188C57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -121,6 +123,10 @@ Global
 		{D06C83CD-1FA3-420F-93DE-CC3DBC983F6F}.Debug|Win32.Build.0 = Debug|Win32
 		{D06C83CD-1FA3-420F-93DE-CC3DBC983F6F}.Release|Win32.ActiveCfg = Release|Win32
 		{D06C83CD-1FA3-420F-93DE-CC3DBC983F6F}.Release|Win32.Build.0 = Release|Win32
+		{30B6A303-FBE9-4FF4-B7BC-0E2314188C57}.Debug|Win32.ActiveCfg = Debug|Win32
+		{30B6A303-FBE9-4FF4-B7BC-0E2314188C57}.Debug|Win32.Build.0 = Debug|Win32
+		{30B6A303-FBE9-4FF4-B7BC-0E2314188C57}.Release|Win32.ActiveCfg = Release|Win32
+		{30B6A303-FBE9-4FF4-B7BC-0E2314188C57}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

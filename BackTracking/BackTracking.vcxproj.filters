@@ -21,5 +21,11 @@
     <ClCompile Include="EightQueens.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="01KnapSack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sudoku_checker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

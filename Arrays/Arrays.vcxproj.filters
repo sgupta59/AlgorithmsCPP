@@ -41,5 +41,8 @@
     <ClCompile Include="FindFirstPositive.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BuySellStocks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
